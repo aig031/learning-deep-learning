@@ -1,0 +1,17 @@
+Why tensorflow? 
+딥러닝의 libraries 중 가장 많이 사용하는 것이 tensorflow다!
+
+Tensorflow : data flow graph를 사용해 numerical computation(계산)을 하는 library이며 python 을 사용한다.
+
+Data flow grph : 노드(option)들이 edges(data-tensors)로 연결되면서 흘러가는 것.
+
+tensor -> array
+tensor Ranks : 몇 차원인가? -> level 0~~~
+
+tensor shapes : 행렬의 각 element에 몇개의 원소가 들어있는가.
+	ex) t=[[1,2,3], [4,5,6], [7,8,9]] -> [3, 3] (3개의 element가 들어있는 element가 3개.)
+
+tensor types
+	주로 float32 or int32사용 (double은 float64)
+
+tensorflow는 그래프를 설계하고 실행시키는 방식으로 진행.
