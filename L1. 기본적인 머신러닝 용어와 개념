@@ -1,0 +1,17 @@
+
+개발자가 원하는 대로 반응하도록 프로그래밍한 정확한 프로그래밍의 한계가 있다.
+ex)spam filter : 너무 많은 종류와 규칙이 필요해서 까다롭다.
+Arthur Samuel -> 컴퓨터가 프로그램을 통해 학습할 수 있도록 하자. -> machine learning
+
+Supervised/unsupervised learning
+	-supervised learning : 정해진 예시의 데이터들(training set)을 가지고 학습을 한다.
+	-unspervised learning : 정해진 데이터가 아닌 스스로 데이터를 찾아서 학습을 한다.
+
+Supervised learning (가장 일반적인 type이다)
+	ex)image labeling : tagged image를 통해 배움, Email spam filter, predicting test score
+	Training data set이 필수적이다!
+
+Types of supervised learning
+	-넓은 범위에서의 예측 : regression ex)점수
+	-두 가지 중에 하나를 고르는 분류 : binary classification ex)p/f
+	-세 가지 이상의 분류 : multi-label classification ex)학점
