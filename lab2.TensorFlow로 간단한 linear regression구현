@@ -1,0 +1,13 @@
+tensorflow mechanics
+
+	1.그래프를 만듬
+	2.sess. run을 통해 데이터를 넣고 그래프를 실행
+	3.그래프에 값을 업데이트
+
+tf.Variable로 변수 생성
+tf.random_normal로 임의 의 값을 집어넣음 ([1]) -> 1차원의 값.
+tf.reduce_mean(t) -> t행렬의 평균을 구해줌
+tf.square -> 제곱
+optimizer를 통해 가장 가까운 값으로 수렴.
+
+tf.placeholder를 통해 나중에 값을 넣어 줄 수도 있다.
