@@ -1,0 +1,11 @@
+목표 : 가지고 있는 data를 통해 cost function을 만들어서 cost가 가장 작은 w를 찾는것!
+
+Gradient descent algorithm (경사 내려가기 알고리즘)
+	-minimization problems에 주로 사용한다.
+	-다양한 값을 가지는 fuction도 minimize해주는 알고리즘.
+	-how it works? : 함수의 경사도(기울기)를 구해(미분하여) 경사도를 따라서 내려가서 경사도가 0이되는 시점을 찾음.
+	주로 W를 바꾸고, b를 조금 씩 바꾸면서 cost함수를 줄이기 위해 작용한다.
+
+Convex function : gradient descent algorithm이 무조건 값을 찾을 수 있는 모양(이를테면 밥그릇 형태의 3d 모형) -> 불균형한 형태일 시 알고리즘이 부정확하게 작동 할 수 있음.
+
+	
