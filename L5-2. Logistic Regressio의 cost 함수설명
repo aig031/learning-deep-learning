@@ -1,0 +1,15 @@
+Logistic Classification - Cost function
+
+곡선을 제곱한 형태의 미분이기 때문에 cost function의 형태가 곡선 형태이다. -> gradient descent 사용 불가.
+
+New cost function : C(H(x), y) = { -log(H(x)) : y = 1,  -log(1-H(x)) : y = 0}
+
+	-log(H(x)) -> H(x) = 1 -> cost(1) = 0, H(x) = 0 -> cost = 무한히 커짐
+	-log(1-H(x)) -> H(x) = 0 -> cost(1) = 0, H(x) = 1 -> cost = " "
+
+	cost(w) = 1/m*시그마 C(H(x), y)
+	C(H(x), y) = -ylog((H(x)) -(1-y)log(1-H(x))  
+	
+	-> gradient descent algorithm 적용 가능!
+
+	
