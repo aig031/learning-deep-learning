@@ -1,0 +1,21 @@
+multi-variable linear regressioon
+
+필요한 것 3가지
+	- Hypothesis -> H(x), W와 b를 학습해야함.
+	- Cost function -> 예측 값과 실제 값 차의 제곱값의 평균
+	- Gradient descent algorithm
+
+
+
+여러가지 변수를 가지는 prediction
+	ex) H(x1, x2, x3) = w1x1 + w2x2 + w3x3 + b
+
+Matrix 
+	H(x1, x2...)를 행렬의 곱으로 표현.
+	(x1 x2 x3)* w1
+	           (w2)	-> H(X) = XW 
+	            w3
+	
+	matrix를 사용하면 w는 변화없이 X의 행을 늘림으로서 instance(data 각각을 이르는 말)들을 한번에 계산 할 수 있다.
+	matrix를 사용하면, instance, variable, result 값의 수의 변화에 유연하게 대응 할 수 있다.
+	TensorFlow의 Implementation -> XW 사용할 것!
