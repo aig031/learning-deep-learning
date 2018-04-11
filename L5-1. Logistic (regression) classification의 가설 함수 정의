@@ -1,0 +1,15 @@
+Logistic Classification - Hypothesis
+
+Binary Classification 
+	ex) spam detection : spam or ham / Facebook feed : show or hide ...etc
+	0, 1 encoding! 
+		ex) spam(1) or Ham(0)
+	linear regression?
+		-> 선을 그어 0.5 이상의 값을 1로 보자.
+		-> x값이 너무 커지거나 작아질 때의 차이로 인해 부정확해 질 수 있다.
+		-> H(x)의 값이 Y의 가능 값인 0보다 작을 수도, 1보다 클 수도 있다.
+	Sigmoid(logistic) function : g(z), z의 값이 아무리 커져도 1보다 작고, 아무리 작아도 0보다 크다.
+
+	Logistic Hypothesis
+		H(X) = g(z) =       1
+		               1 + e^-W^T*X
