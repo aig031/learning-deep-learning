@@ -1,1 +1,4 @@
-anaconda  깔아야 되는듯 ... 실화냐... 
+compute_gradient and apply_gradient
+	gvs = optimizer.compute_gradients(cost) -> get gradients
+	apply_gradients = optimizer.apply_gradients(gvs) -> apply gradients
+
