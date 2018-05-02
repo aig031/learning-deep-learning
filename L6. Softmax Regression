@@ -1,0 +1,19 @@
+Multinomial classification : 3개의 독립된 classification을 matrix를 늘임으로 합쳐서 한 번에 표현 할 수 있다.
+
+결과 값에 sigmoid를 간단하게 적용하는 방법?
+
+WX = Y [2.0 -> p = 0.7 로 바꾸는 방법.
+	      1.0 -> p = 0.2
+	      0.1]-> p = 0.1
+  조건
+	1) 각각 0~1 사이
+	2) sum = 1
+
+one-hot encoding -> 가장 높은 값을 가지는 값을 1로 만들어준다.
+
+cost-function -> CROSS-ENTROPY를 통해 알아냄.
+
+	예측 값과 실제 값의 차이를 알아냄. (차이가 크면 큰 값을 주어 system에 notice 시키자.)
+
+	Logistic cost VS cross entropy
+	-> logistcic cost = cross entropy
