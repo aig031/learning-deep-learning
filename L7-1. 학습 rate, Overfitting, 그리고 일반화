@@ -1,0 +1,23 @@
+Gradient descent 알고리즘을 실행 시, learning rate라는 '알파'값을 임의로 정했다.
+
+Learning rate
+	Large learning late: overshooting
+		cost가 줄어들 지 않고, 계속 커지다가 원하는 값을 벗어나 버림.
+	Small learning late: 시간이 너무 오래 걸리며, local minimum(시간 상 정지된 장소)에 멈추는 경향이 있음.
+	-> try several learning rate
+
+Data 값에 큰 차이점이 있을 때, 이를 normalize 할 필요가 있다. -> overshooting의 위험성이 있음.
+	-> zero-centered data
+	-> normalizedd data
+
+Standardization(in python) : X-std[:,0] = (X[:0] - X[:,0].mean()) / X[:0].std() 
+
+Overfitting -> 우리의 모델이 training data set(with memorization)에 너무 잘 맞는 경우 -> 지나칠 정도로 data에 맞추어진 model.
+			: 실제 사용이나 다른 data set에 제대로 사용되지 않을 수 있다.
+	Solution -> More taining data
+		 -> Reduce the number of features
+		 -> Regularization
+
+Regularization : Let's not hae too big numbers in the weight
+	-> cost 함수의 뒤에, 상수(R.S)*W^2의 합(시그마)를 추가한다.
+	-> regularization strength(R.S)로 어느정도로 적용할 지를 정한다. (0 = 적용하지 않음.)
