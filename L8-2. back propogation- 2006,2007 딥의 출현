@@ -1,0 +1,12 @@
+CIFAR(canadian institue for advanced research) had a huge impact in forming a community around deep learning.
+
+Breakthrough = if the weights are initialized in a clever way, many layers really could be trained well
+	-> rebranding to Deep Nets, Deep learning.
+
+ImageNet classification -> 계속해서 발전중. (2015년 에러 3% -> 인간을 넘어섰다.)
+
+Deep API Learning -> copy a file and save it to your destination path.(원하는 곳으로 보내줌. 2016년 약 60프로의 정확도)
+
+Speech recognition, alphago, 유투브의 자동자막... etc.
+
+이미 다양한 분야에서 딥러닝을 통해, 고객들의 의도를 맞추고자 하는 연구가 진행 되고 있다.
