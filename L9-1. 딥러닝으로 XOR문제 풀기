@@ -1,0 +1,17 @@
+XOR using NN
+	Neural Net
+		y1-> w = 5, b = -8  y2-> w = -7, b = 3  y`-> w = -11, b = 6
+		         5                   -7                  -11
+		실행결과
+		x1 x2 y1 y2 y` XOR           x1, x2 -> y1, y2 -> y`
+		0  0  0  1  0  0
+		0  1  0  0  1  1
+		1  0  0  0  1  1
+		1  1  1  0  0  0
+		
+		-> Forward Propogation ( neural network )
+
+		두 개의 w, b를 행렬의 열을 늘려, 한 개의 행렬로 표현 가능.(L6-1 참고)
+
+	K(x) = sigmoid(xW1 + b1) : w1은 합쳐진 두 w, b
+	Y` = H(x) = sigmoid(K(x)W2 + b2)
