@@ -1,0 +1,16 @@
+미분 값을 통해서, 다음 값을 전달 받아야한다.
+
+Back propagation(chain rule)
+	f = wx + b, g = wx, f = g + b
+
+	1. forward -> 바로 적용 가능.
+	2. backward -> g를 x로 편미분하면 w이고, w로 편미분하면 x이다. f를 g,b로 각각 편미분 하면 1이다.
+	            -> f를 w로 미분한다면, chain rule에 의해, f를 g로 미분한것*g를 w로 미분한것.
+	            -> 미분한 값의 의미 = w,x,g,b의 값의 변화가 f의 결과 값에 끼지는 영향.
+
+	이것이 복잡해지는 경우: 노드를 앞에서 부터 뒤로가면서(back propogation) 미분 해 나간다.
+
+	sigmoid: g(z) =    1         -> 마찬 가지로 뒤로 가며 계산 가능.    
+	                 1+e^-2
+
+TensorFlow도 graph를 통해, 쉽게 backpropagation을 구현한다.
