@@ -1,0 +1,24 @@
+Activation function: 특정 상황에서 작동하거나 작동하지 않기 때문에 Activation function.
+
+input layer -> hidden layers -> output layer.
+
+복잡한 네트워크를 볼 때, Tensorboard visualization을 통하여 보면 편하다.
+
+hidden layer가 여러개 생성되면, poor results 발생.
+	sigmoid 함수를 통과한다면, 1보다 작은, 0에 가까운 값이 chain rule에 의해 적용되어지게 된다.
+	결론적으로 무한히 0에 가까워진다. 
+		-> vanishing gradient
+
+	We used the wrong type of none-linearnity!
+		-> Relu의 등장.
+
+ReLU(Rectified Linear Unit) : sigmoid는 nn에서 사용하기 힘들다.
+	tf.nn.relu(tf.matmul(X,W1)+b1)
+	:0 이하의 값은 적용하지 않고, 0이상의 값은 그와 비례하여 커진다.
+	
+단, 마지막 결과 값에서는 sigmoid를 적용해야 한다. 0~1의 확률을 보여주어야 하기에
+
+그 외의 함수들
+  Leaky ReLU(max(0.1x, x), ELU도 등장.
+  tanh(-1~1까지의 sigmoid 형태 함수)
+
