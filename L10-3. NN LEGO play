@@ -1,0 +1,10 @@
+Feedforward neural network -> 일렬로 이어지는 NN
+
+Fast forward: signal을 다음 Neuron이 아닌 더 앞으로 보내서 사용 할 수 있도록 하는 것
+
+Split & merge: network를 분산하고, 합치거나, input을 나누어 받거나 하는 것.
+	-> convolutional network
+
+Recurrent network: 옆으로 퍼져나가는 network.(=RNN)
+
+"The only limit is your imagination" -> net의 block을 원하는 대로 조립해보자!
