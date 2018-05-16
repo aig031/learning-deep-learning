@@ -1,0 +1,25 @@
+Weight의 초기 값을 전부 0으로 둔다면, 모든 기울기가 0이되어 gradient가 사라지게 된다. 
+
+Need to set the initial weight values wisely
+	Not all 0's
+	Restricted boatman Machine(RBM) -> Deep Belief Nets
+		Restriction = no connectinos within a layer
+	KL DIVERGENCE = compare actual to recreation(forward-actual vs backward-recreate)
+	                                                 incode          decode
+
+Apply the RBM idea on adjacent two layers as a pre-training step.
+
+Deep belief network => forward back ward를 통해, input을 정확히 유추할 수 있는 weight값을 초기화 값으로 사용한다. -> Fine tuning(by label)
+
+Now no need to use complicated RBM
+	-> Xavier/He initialization = input과 ouput의 개수를 통해, weight 값을 지정한다.
+		W = np.random.randn(fan_in, fan_out)/np.sqrt(fan_in)
+		2015년:                                      fan_in/2
+
+완벽한 weight values initialization을 위해 아직 연구중이다.
+
+Geoffrey Hinton's summary of findings up to today
+- Our labeled dataset were thousands of times too small
+- Our computers were millions of times too slow
+- We initialized the weights in a stupid way
+- We used the wrong type of non-linearity
