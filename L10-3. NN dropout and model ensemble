@@ -1,0 +1,18 @@
+Overfitting의 확인 방법
+	-> training dataset에서 매우 높은 정확도를 보이지만, test data set에서 poor accuracy를 보여줄 때
+		NN에서 test err가 어느 시점 오히려 늘어나는 모습이 보인다.
+Solutions
+	More training data
+	Reduce the number of features
+	Regularization
+		regularization Strength를 사용하는, L2 regularization을 사용.(regularization 부분 참조.)
+
+Dropout
+	A simple wway to prevent Neural Netwroks from Overfitting -> 랜덤하게 어떤 뉴런들을 0으로 설정하자.(사용하지 말자)
+	droupout_rate = tf.placeholder("float") -> dropout rate 몇 퍼센트의 node를 사용할까?
+
+	실제 Evaluation에서는 전부 참여해야한다.(dropout_rate: 1)
+
+Ensamble
+	똑같은 형태의 복수의 딥러닝 모델을 만들고(초기 weight는 다를 수 있음.), 마지막에 합쳐서 Ensemble Prediction을 제출.
+		2~4,5 %의 확률 상승.
