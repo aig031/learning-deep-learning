@@ -1,0 +1,15 @@
+L11-1. ConvNet의 Conv 레이어 만들기
+
+여러 개의 input을 모아 하나의 output을 내는 것 -> Convolutional Neural network
+
+한 개의 이미지를 여러 작은 이미지로 나누어, RELU, PULL을 통해 FC로 정답을 유추
+
+32X32X3 image -> 5X5X3 filter(focus on small area) -> get one number using the filter(using Wx+b = ReLU(Wx+b))
+-> look at other areas with the smae filter(how many numbers we get? (N-F)/stride+1, stride(=filter를 얼마나 움직이는가?), N=이미지 크기, F=필터 크기)
+
+
+Common to zero pad the border -> padding의 등장.(모서리의 인식)-> N = N+2
+padding을 통해, input과 output을 똑같게 만든는 것이 일반적.
+
+Swiping the entire image -> weight가 다른 여러개의 filter를 적용해서 convolutional Layer에 적용시킨다.
+-> 이를 반복한다. (weight의 개수 = filter의 개수)
