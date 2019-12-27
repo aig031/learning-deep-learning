@@ -1,0 +1,21 @@
+Q-learinng,의 action 선택 방식
+- exploit vs exploration
+E-greedy
+0.1의 확률로 랜덤 그렇지 않다면, argmax를 따라감.
+
+decaying e-greedy, i가 커짐에 따라 확률을 줄임.
+for i in range():
+	0.1/(i+1)의 확률.
+
+add random noise: Q(s, a)의 각 값에 rand 값을 더함.
+a = argmax([0.5 0.6]+[0.2 0.0]) 역시 (i+1)을 활용한 decaying이 가능.
+noise의 특징, random noise 가 존재하더라도 더 값이 높은 action을 취할 확률이 높음.
+
+- discounted reward -> 가장 높은 reward를 가진 길을 찾자.
+기존의 방식 Q(s,a) <- r + maxQ(s', a') 
+-> 미래의 reward를 줄인다.
+Qhash(s,a) <- r + 감마maxQ(s', a') 감마<1
+결과적으로 Qhash는 Q에 수렴이된다, 상이 일정하고, 상태의 수가 유한한 경우.
+
+Q-learning in stochastic world,
+Listen to Q just a little bit, update Q little bit(by learning rate)
